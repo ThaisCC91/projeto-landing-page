@@ -88,11 +88,14 @@ footer{
 main{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 68vh;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
     
+}
+
+.tamanho-pagina{
+    height: 68vh;
 }
 
 .dados{

@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover{
+    z-index: 1.1;
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    color: rgb(104, 53, 5); 
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-top: 20px;
+    line-height: 2;
+    align-items: center;   
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    flex-direction: column;
+    background-color: black;
+    color: ivory;
+    height: 15vh;
+}
+.categorias{
+    display: flex;
+    background-image: linear-gradient(45deg,#1CDDEB, #9B1AEB);
+    flex-wrap:wrap; 
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 480px) 
+{
+  .categorias{
+    flex-direction: column;
+  }  
+  .dados{
+    max-width: 100vw;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+ header img{
+    width: 3em;
+    height: 3em;
+ }
+ main{
+    flex-direction: column;
+ }
+ 
+}
+
+.produtos img{
+    width: 20em;
+    height: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.produtos p{
+    font-size: 2em;
+}
+.produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 17px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 68vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dados{
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+label{
+    font-weight: bold;
+}
+input{
+    height: 25px;
+}
+button{
+    background-color: #8b868a; 
+    color: white; 
+    padding: 15px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-left: 37em;
+    margin-right: 37em;
+    margin-top: 2em;
+}
+ button:hover {
+    background-image: linear-gradient(45deg,#1CDDEB, #9B1AEB);
+  }

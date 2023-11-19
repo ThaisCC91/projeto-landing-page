@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
     <title>4Food</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="index.js" defer></script>
 </head>
 <header>
     <a href="index.html"><img src="./Imagens/4food logo.png" alt="logo 4food" height="200"></a>
@@ -12,33 +14,32 @@
     <a href="https://www.instagram.com/" target="_blank"><img src="./Imagens/Logo Insta.png" alt="logo Instagram"></a>
     <a href="https://web.whatsapp.com/" target="_blank"><img src="./Imagens/Logo Whats.png" alt="logo WhatsApp"></a>
     <ul>
-    <a href="QuemSomos.html" target="_parent"><li><h4>Quem somos</h4></li></a>
-    <a href="https://www.google.com/maps/" target="_blank"><li><h4>Onde Estamos</h4></li></a>
-    <a href="Contato1.html" target="_parent"> <li><h4>Contato</h4></li></a>
+    <a href="QuemSomos.html" target="_parent"><p class="menu">Quem somos</p></a>
+    <a href="https://www.google.com/maps/" target="_blank"><p class="menu">Onde Estamos</p></a>
+    <a href="Contato1.html" target="_parent"><p class="menu">Contato</p></a>
     </ul>
 </header>
 <body>
     <main>
-        <section>
+            <div class="dados"> 
             <form action="#">
-                <label for="Nome">Nome:</label>
-                <input type="text" name="Nome" id="Nome"> <br>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"> <br>
 
-                <label for="E-mail"> E-mail:</label>
-                <input type="text" name="E-mail" id="E-mail"> <br>
+                <label for="email"> E-mail:</label>
+                <input type="text" name="email" id="email"> <br>
 
-                <label for="Mensagem"> Mensagem:</label>
-                <input type="text" name="Mensagem" id="Mensagem">
-
+                <label for="mensagem"> Mensagem:</label>
+                <input type="text" name="mensagem" id="mensagem">
             </form>
-
-        </section>
+            </div>
+            <button onclick="verificarInput(event)">Enviar</button>
     </main>
-    <footer>
-        <h5>Endereço: Largo do Arouche n°69</h5>
-        <h5>CEP:69609-240</h5>
-        <h5>Brasil - São Paulo</h5>
 
+    <footer>
+        <h5>Endereço: Largo do Arouche n°1000</h5>
+        <h5>CEP:68609-240</h5>
+        <h5>Brasil - São Paulo</h5>
     </footer>
 </body>
 </html>
